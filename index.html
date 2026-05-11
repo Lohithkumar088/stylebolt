@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StyleBolt — Drop The Ordinary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════ COUNTDOWN BANNER ══════════════════════════ -->
+  <div class="countdown-banner" id="countdownBanner">
+    <div class="countdown-inner">
+      <span class="countdown-label">⚡ FINAL DROP ENDS IN</span>
+      <div class="countdown-timer">
+        <div class="cd-block"><span id="cdDays">00</span><small>DAYS</small></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-block"><span id="cdHours">00</span><small>HRS</small></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-block"><span id="cdMins">00</span><small>MIN</small></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-block"><span id="cdSecs">00</span><small>SEC</small></div>
+      </div>
+      <a href="#shop" class="countdown-cta">Shop Now →</a>
+    </div>
+    <button class="countdown-close" id="countdownClose">✕</button>
+  </div>
+
+  <!-- ═══════════════════════════════ NAVBAR ═══════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">STYLE<span>BOLT</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn" aria-label="Search" id="searchToggle">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Wishlist">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </button>
+        <button class="icon-btn cart-btn" aria-label="Cart" id="cartToggle">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar" id="searchBar">
+      <input type="text" placeholder="Search for drops, styles, vibes..." id="searchInput" />
+      <button class="search-close" id="searchClose">✕</button>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════════════ HERO ════════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-grain"></div>
+      <div class="hero-grid-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow animate-fade-up">New Drop — May 2026</div>
+      <h1 class="hero-title animate-fade-up delay-1">
+        DROP THE<br /><span class="hero-title-accent">ORDINARY.</span>
+      </h1>
+      <p class="hero-sub animate-fade-up delay-2">
+        New arrivals every Friday.<br />Free shipping above ₹999.
+      </p>
+      <div class="hero-cta animate-fade-up delay-3">
+        <a href="#shop" class="btn btn-primary">Shop Now</a>
+        <a href="#collections" class="btn btn-ghost">View Lookbook</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint animate-fade-up delay-4">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+
+    <!-- Floating badges -->
+    <div class="hero-badge badge-1 animate-float">FREE SHIP</div>
+    <div class="hero-badge badge-2 animate-float-slow">NEW DROP</div>
+  </section>
+
+  <!-- ══════════════════════════ TRUST STRIP ══════════════════════════════ -->
+  <div class="trust-strip reveal">
+    <div class="trust-inner">
+      <div class="trust-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        <span>Free Shipping above ₹999</span>
+      </div>
+      <div class="trust-sep">✦</div>
+      <div class="trust-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-4"/></svg>
+        <span>Easy 7-Day Returns</span>
+      </div>
+      <div class="trust-sep">✦</div>
+      <div class="trust-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        <span>Secure Payments</span>
+      </div>
+      <div class="trust-sep">✦</div>
+      <div class="trust-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 13 19.79 19.79 0 0 1 1.08 4.38 2 2 0 0 1 3.07 2.19h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.72 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.36 1.85.6 2.81.72A2 2 0 0 1 21 16.92z"/></svg>
+        <span>24/7 Support</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════ SHOP ════════════════════════════════ -->
+  <section class="shop-section" id="shop" >
+  <div class="reveal">
+    <div class="section-header">
+      <div class="section-tag">— Current Drop</div>
+      <h2 class="section-title">Latest Arrivals</h2>
+    </div>
+
+    <!-- Filter + Sort Bar -->
+    <div class="filter-bar">
+      <div class="filter-chips">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="tops">Tops</button>
+        <button class="chip" data-filter="bottoms">Bottoms</button>
+        <button class="chip" data-filter="outerwear">Outerwear</button>
+        <button class="chip" data-filter="accessories">Accessories</button>
+      </div>
+      <select class="sort-select" id="sortSelect">
+        <option value="default">Sort: Featured</option>
+        <option value="price-asc">Price: Low → High</option>
+        <option value="price-desc">Price: High → Low</option>
+        <option value="newest">Newest First</option>
+      </select>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="product-grid" id="productGrid">
+      <!-- injected by JS -->
+    </div>
+  </section>
+
+  <!-- ════════════════════════ COLLECTIONS BANNER ═════════════════════════ -->
+  <section class="collections-section reveal" id="collections">
+    <div class="section-header light">
+      <div class="section-tag">— Curated For You</div>
+      <h2 class="section-title">Shop By Vibe</h2>
+    </div>
+    <div class="collections-grid">
+      <div class="collection-card col-wide">
+        <div class="collection-bg" style="background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%)"></div>
+        <div class="collection-label">
+          <div class="col-tag">Streetwear</div>
+          <h3>Urban Edge</h3>
+          <a href="#shop" class="btn btn-sm">Explore</a>
+        </div>
+      </div>
+      <div class="collection-card">
+        <div class="collection-bg" style="background: linear-gradient(135deg, #2d1b69 0%, #11998e 100%)"></div>
+        <div class="collection-label">
+          <div class="col-tag">Minimalist</div>
+          <h3>Clean Lines</h3>
+          <a href="#shop" class="btn btn-sm">Explore</a>
+        </div>
+      </div>
+      <div class="collection-card">
+        <div class="collection-bg" style="background: linear-gradient(135deg, #4a1942 0%, #c74b50 100%)"></div>
+        <div class="collection-label">
+          <div class="col-tag">Bold</div>
+          <h3>Statement Pieces</h3>
+          <a href="#shop" class="btn btn-sm">Explore</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════ NEWSLETTER ══════════════════════════════ -->
+  <section class="newsletter-section reveal" id="about">
+    <div class="newsletter-inner">
+      <div class="newsletter-text">
+        <div class="section-tag light-tag">— Exclusive Access</div>
+        <h2>Get Early Drop<br /><span class="accent">Notifications</span></h2>
+        <p>Be first in line for limited releases. No spam — just drops.</p>
+      </div>
+      <div class="newsletter-form-wrap">
+        <div class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="your@email.com" id="emailInput" />
+          <button class="btn btn-primary" id="subscribeBtn">Subscribe</button>
+        </div>
+        <div class="form-feedback" id="formFeedback"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ FOOTER ════════════════════════════ -->
+  <footer class="footer reveal">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">STYLE<span>BOLT</span></div>
+        <p>Curated urban fashion for the bold generation.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" aria-label="Twitter">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#collections">Collections</a></li>
+          <li><a href="#">Lookbook</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Returns & Refunds</a></li>
+          <li><a href="#">Size Guide</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About StyleBolt</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 StyleBolt. All rights reserved.</span>
+      <div class="payment-icons">
+        <span class="pay-chip">VISA</span>
+        <span class="pay-chip">UPI</span>
+        <span class="pay-chip">GPay</span>
+        <span class="pay-chip">Razorpay</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════ CART SIDEBAR ═════════════════════════════ -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Your Cart <span id="cartCount">(0)</span></h3>
+      <button class="cart-close" id="cartClose">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <p>Your cart is empty</p>
+        <a href="#shop" class="btn btn-primary" onclick="closeCart()">Start Shopping</a>
+      </div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="cart-subtotal">
+        <span>Subtotal</span>
+        <span id="cartSubtotal">₹0</span>
+      </div>
+      <div class="cart-shipping-note">Free shipping on this order 🎉</div>
+      <button class="btn btn-primary btn-full">Checkout</button>
+      <button class="btn btn-ghost btn-full" onclick="closeCart()">Continue Shopping</button>
+    </div>
+  </aside>
+
+  <!-- ═══════════════════════ QUICK VIEW MODAL ════════════════════════════ -->
+  <div class="modal-overlay" id="modalOverlay"></div>
+  <div class="quick-view-modal" id="quickViewModal">
+    <button class="modal-close" id="modalClose">✕</button>
+    <div class="modal-content" id="modalContent">
+      <!-- injected by JS -->
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast"></div>
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="app.js"></script>
+</body>
+</html>

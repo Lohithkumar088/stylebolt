@@ -136,7 +136,7 @@ function renderProducts() {
         ${p.tag ? `<div class="product-tag tag-${p.tag}">${p.tag.toUpperCase()}</div>` : ""}
         <div class="product-img-placeholder">
           <img
-            src="images/product-${p.id}.jpg"
+            src="product-${p.id}.jpg"
             alt="${p.name}"
             loading="lazy"
             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
@@ -234,7 +234,7 @@ function updateCart() {
     cartItems.innerHTML = cart.map(item => `
       <div class="cart-item">
         <div class="cart-item-img">
-          <img src="images/product-${item.id}.jpg" alt="${item.name}" onerror="this.style.display='none';this.parentElement.innerHTML='${item.emoji}';" style="width:100%;height:100%;object-fit:cover;border-radius:4px;" />
+          <img src="product-${item.id}.jpg" alt="${item.name}" onerror="this.style.display='none';this.parentElement.innerHTML='${item.emoji}';" style="width:100%;height:100%;object-fit:cover;border-radius:4px;" />
         </div>
         <div class="cart-item-info">
           <div class="cart-item-name">${item.name}</div>
@@ -292,7 +292,7 @@ function openQuickView(id) {
   if (!p) return;
 
   modalContent.innerHTML = `
-    <div class="modal-img" style="padding:0;overflow:hidden;"><img src="images/product-${p.id}.jpg" alt="${p.name}" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='${p.emoji}';" /></div>
+    <div class="modal-img" style="padding:0;overflow:hidden;"><img src="product-${p.id}.jpg" alt="${p.name}" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='${p.emoji}';" /></div>
     <div class="modal-details">
       <div class="modal-category">${p.category}</div>
       <div class="modal-name">${p.name}</div>
